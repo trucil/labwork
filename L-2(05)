@@ -1,0 +1,23 @@
+# include <stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    printf("Enter your gross profit : ");
+    scanf("%d",&a);
+
+    b = a - (a*15/100);
+    c = a - (a*10/100);
+    d = a - (a*5/100);
+    
+    if(a>20000)
+    {
+        printf("Your net sales are : %d",b);
+    }else if(a>10000 && a<=20000)
+    {
+        printf("Your Net sales are : %d",c);
+    }else
+    {
+        printf("Your Net sales are : %d",d);
+    }
+}
