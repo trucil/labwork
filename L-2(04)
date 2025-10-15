@@ -1,0 +1,16 @@
+# include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter your number : ");
+    scanf("%d",&a);
+
+    if (a%7 == 0)
+    {
+        printf("this number is divisible by 7 ");
+    }else
+    printf("number isn't divisible by 7");
+    
+    return 0;
+}
