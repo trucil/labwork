@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+ void main()
+{
+
+float a,b,c;
+
+ printf("Enter Gross Salary : ");
+    scanf("%f",&a);
+
+    if(a>=10000)
+    {
+        b = a + (a*7/100);
+        printf("Your Net salary is : %f ",b);
+    }else if(a>=5000 && a<10000)
+    {
+        c = a + (a*5/100);
+        printf("Your Net salary is : %f ",c);
+    }else
+    {
+        printf("Get a new job");
+    }
+}
