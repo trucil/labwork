@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int rupees;
+    float dollars;
+
+    printf("Enter rupees: ");
+    scanf("%d", &rupees);
+
+    dollars = rupees / 48.0;
+
+    printf("%d rupees = %.3f dollars\n", rupees, dollars);
+
+    return 0;
+}
