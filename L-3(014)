@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int arr[10], i, sum = 0;
+    float mean;
+
+    printf("Enter 10 values:\n");
+    for(i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i];
+    }
+
+    mean = sum / 10.0;
+
+    printf("Sum = %d\n", sum);
+    printf("Mean = %.2f\n", mean);
+
+    return 0;
+}
+
