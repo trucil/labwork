@@ -1,0 +1,55 @@
+# include <stdio.h>
+
+int main()
+{
+    int a,b,c,marks;
+    printf("Enter your marks in subject 1 : ");
+    scanf("%d",&a);
+    printf("Enter your marks in subject 2 : ");
+    scanf("%d",&b);
+    printf("Enter your marks in subject 3 : ");
+    scanf("%d",&c);
+
+    marks = (a+b+c)/3;
+    
+       if (marks < 0 || marks > 100) {
+        printf("Invalid marks!\n");
+    } else {
+        switch (marks / 5) {
+            case 20:
+            case 19:
+            case 18:  
+            case 17:
+            case 16:
+            case 15:
+            case 14:  
+            case 13:
+                printf("Distinction\n");
+                break;
+
+            case 12:
+            case 11:
+            
+                printf("first class\n");
+                break;
+
+            case 10:
+            case 9:
+                printf("second class\n");
+                break;
+
+            case 8:
+            case 7:
+                printf("third class\n");
+                break;
+
+            case 6:
+            
+                printf("Grade: F (Fail)\n");
+                break;
+
+            default:
+                printf("Grade: F (Fail)\n");
+        }
+    }
+}
